@@ -1,0 +1,16 @@
+{
+  "name": "Increase Droprate",
+  "description": "Increases the droprate of items.",
+  "author": "olegbl",
+  "website": "https://github.com/dingpl716/d2rmm_AlwaysQuestDroprate",
+  "version": "1.0",
+  "config": [
+    {
+      "id": "enabled",
+      "type": "checkbox",
+      "name": "Enable this mod or not.",
+      "description": "Disable to not modify the droprate.",
+      "defaultValue": true
+    }
+  ]
+}
