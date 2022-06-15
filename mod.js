@@ -1,82 +1,82 @@
+// q = quest, f = farm
+const bosses = [
+  {
+    q: "Andarielq",
+    f: "Andariel",
+  },
+  {
+    q: "Andarielq (N)",
+    f: "Andariel (N)",
+  },
+  {
+    q: "Andarielq (H)",
+    f: "Andariel (H)",
+  },
+  {
+    q: "Durielq - Base",
+    f: "Duriel - Base",
+  },
+  {
+    q: "Durielq (N) - Base",
+    f: "Duriel (N) - Base",
+  },
+  {
+    q: "Durielq (H) - Base",
+    f: "Duriel (H) - Base",
+  },
+  {
+    q: "Durielq",
+    f: "Duriel",
+  },
+  {
+    q: "Durielq (N)",
+    f: "Duriel (N)",
+  },
+  {
+    q: "Durielq (H)",
+    f: "Duriel (H)",
+  },
+  {
+    q: "Mephistoq",
+    f: "Mephisto",
+  },
+  {
+    q: "Mephistoq (N)",
+    f: "Mephisto (N)",
+  },
+  {
+    q: "Mephistoq (H)",
+    f: "Mephisto (H)",
+  },
+  {
+    q: "Diabloq",
+    f: "Diablo",
+  },
+  {
+    q: "Diabloq (N)",
+    f: "Diablo (N)",
+  },
+  {
+    q: "Diabloq (H)",
+    f: "Diablo (H)",
+  },
+  {
+    q: "Baalq",
+    f: "Baal",
+  },
+  {
+    q: "Baalq (N)",
+    f: "Baal (N)",
+  },
+  {
+    q: "Baalq (H)",
+    f: "Baal (H)"
+  },
+]
+
 if (config.enabled) {
   const treasureclassexFilename = 'global\\excel\\treasureclassex.txt';
   const treasureclassex = D2RMM.readTsv(treasureclassexFilename);
-
-  // q = quest, f = farm
-  const bosses = [
-    {
-      q: "Andarielq",
-      f: "Andariel",
-    },
-    {
-      q: "Andarielq (N)",
-      f: "Andariel (N)",
-    },
-    {
-      q: "Andarielq (H)",
-      f: "Andariel (H)",
-    },
-    {
-      q: "Durielq - Base",
-      f: "Duriel - Base",
-    },
-    {
-      q: "Durielq (N) - Base",
-      f: "Duriel (N) - Base",
-    },
-    {
-      q: "Durielq (H) - Base",
-      f: "Duriel (H) - Base",
-    },
-    {
-      q: "Durielq",
-      f: "Duriel",
-    },
-    {
-      q: "Durielq (N)",
-      f: "Duriel (N)",
-    },
-    {
-      q: "Durielq (H)",
-      f: "Duriel (H)",
-    },
-    {
-      q: "Mephistoq",
-      f: "Mephisto",
-    },
-    {
-      q: "Mephistoq (N)",
-      f: "Mephisto (N)",
-    },
-    {
-      q: "Mephistoq (H)",
-      f: "Mephisto (H)",
-    },
-    {
-      q: "Diabloq",
-      f: "Diablo",
-    },
-    {
-      q: "Diabloq (N)",
-      f: "Diablo (N)",
-    },
-    {
-      q: "Diabloq (H)",
-      f: "Diablo (H)",
-    },
-    {
-      q: "Baalq",
-      f: "Baal",
-    },
-    {
-      q: "Baalq (N)",
-      f: "Baal (N)",
-    },
-    {
-      q: "Baalq (H)",
-      f: "Baal (H)"
-    },
-  ]
 
   treasureclassex.rows.forEach((row) => {
     update_row(row, treasureclassex.rows);
@@ -128,7 +128,7 @@ function update_row(row, rows) {
 }
 
 function get_row(rows, name) {
-  rows.find((row) => {
+  return rows.find((row) => {
     return name == row['Treasure Class'];
   });
 }

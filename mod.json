@@ -1,7 +1,7 @@
 {
-  "name": "Increase Droprate",
-  "description": "Increases the droprate of items.",
-  "author": "olegbl",
+  "name": "Always Quest Droprate",
+  "description": "Change the item drop rate of bosses as if you are kill them for the first time.",
+  "author": "dingpl",
   "website": "https://github.com/dingpl716/d2rmm_AlwaysQuestDroprate",
   "version": "1.0",
   "config": [
